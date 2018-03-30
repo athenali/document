@@ -1,0 +1,14 @@
+mongodb
+安装步骤：
+1.在官网上下载
+2.在bin目录下写配置文件mongodb.conf
+内容为：
+port=27017
+dbpath=/root/datasource/mongodb-linux-x86_64-3.6.3/data/dr    //自己创建的目录
+logappend=true
+fork=true
+logpath=/root/datasource/mongodb-linux-x86_64-3.6.3/data/logs   
+在服务器192.168.2.222上面部署
+位置为：/root/datasource/mongodb-linux-x86_64-3.6.3
+启动方式为：在bin目录下面执行  ./mongod -f ./mongodb.conf
+然后在本地进行测试： 在bin目录下面执行  ./mongo 127.0.0.1  
